@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login administrativo | Passo certo</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <main class="login-card">
+    <div class="brand-mark">Passo certo</div>
+    <h1>Acesso administrativo</h1>
+    <p class="muted">Entre para gerenciar os tutoriais.</p>
+    <form id="loginForm">
+      <label for="usuario">Usuário</label>
+      <input id="usuario" name="usuario" autocomplete="username" required>
+      <label for="senha">Senha</label>
+      <input id="senha" name="senha" type="password" autocomplete="current-password" required>
+      <p id="erro" class="error" role="alert" aria-live="polite"></p>
+      <button type="submit" class="primary">Entrar</button>
+    </form>
+    <a class="back-link" href="index.html">Voltar ao Passo certo</a>
+  </main>
+  <script src="js/admin.js"></script>
+</body>
+</html>

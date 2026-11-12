@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel administrativo | Passo certo</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <main class="admin-wrap">
+    <header class="admin-header">
+      <div><div class="brand-mark">Passo certo</div><h1>Painel administrativo</h1><p class="muted">Cadastre e edite os conteúdos dos tutoriais.</p></div>
+      <div class="header-actions"><a class="button secondary" href="index.html">Ver página</a><button id="sair" class="button secondary" type="button">Sair</button></div>
+    </header>
+    <section class="panel-grid">
+      <aside class="tutorial-list-card">
+        <div class="list-heading"><h2>Tutoriais</h2><button id="novo" class="button primary" type="button">+ Novo</button></div>
+        <div id="listaTutoriais" class="tutorial-list"></div>
+      </aside>
+      <section class="editor-card">
+        <h2 id="tituloFormulario">Editar tutorial</h2>
+        <form id="formTutorial">
+          <input type="hidden" id="id">
+          <label for="titulo">Título</label><input id="titulo" required maxlength="100">
+          <label for="descricao">Descrição</label><textarea id="descricao" rows="2" required></textarea>
+          <div class="form-row">
+            <div><label for="categoria">Trilha</label><select id="categoria"><option value="0">Primeiros passos</option><option value="1">No dia a dia</option><option value="2">Com mais cuidado</option></select></div>
+            <div><label for="duracao">Duração (minutos)</label><input id="duracao" type="number" min="1" max="999" value="2" required></div>
+          </div>
+          <label for="youtube">Link do vídeo do YouTube</label><input id="youtube" type="url" placeholder="https://youtu.be/...">
+          <label for="passos">Passos (um por linha)</label><textarea id="passos" rows="6" required></textarea>
+          <label for="cuidados">Avisos de segurança (um por linha, opcional)</label><textarea id="cuidados" rows="3"></textarea>
+          <div class="editor-actions"><button class="button primary" type="submit">Salvar alterações</button><button id="excluir" class="button danger" type="button">Excluir tutorial</button></div>
+          <p id="mensagem" class="success" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+    <p class="notice">As alterações ficam salvas somente neste navegador. Para que outros visitantes recebam as atualizações, será necessário publicar os dados em um serviço compartilhado ou adicionar um backend futuramente.</p>
+  </main>
+  <script src="js/tutoriais.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

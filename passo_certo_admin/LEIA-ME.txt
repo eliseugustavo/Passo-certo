@@ -1,0 +1,21 @@
+PASSO CERTO - PAINEL ADMINISTRATIVO LOCAL
+
+Arquivos:
+- index.html: página principal original adaptada para ler tutoriais do localStorage.
+- admin.html: tela de login.
+- painel.html: painel para criar, editar e excluir tutoriais.
+- js/admin.js: credenciais e funções administrativas.
+- js/tutoriais.js: cópia inicial dos tutoriais originais.
+
+Credenciais iniciais:
+Usuário: admin
+Senha: 123456
+
+Como testar sem Apache ou XAMPP:
+1. Abra a pasta no Visual Studio Code.
+2. Instale a extensão Live Server.
+3. Clique com o botão direito em index.html e escolha "Open with Live Server".
+4. Abra admin.html no mesmo endereço/servidor para entrar no painel.
+
+IMPORTANTE:
+Este é um protótipo sem backend. O login é apenas uma barreira visual, não uma autenticação segura. Os dados são salvos no localStorage do navegador e computador usados para editar; não são enviados para outros visitantes nem sincronizados entre dispositivos. Para publicar com edição compartilhada e acesso realmente protegido, será necessário um backend ou serviço de dados remoto no futuro.

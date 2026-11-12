@@ -480,7 +480,8 @@
         <button role="tab" data-tab="seen">Assistidos</button>
         <button role="tab" data-tab="favs">Favoritos<span class="badge" id="fc" hidden></span></button>
         <button role="tab" data-tab="safe">Segurança</button>
-        <button role="tab" data-tab="help">Ajuda</button>
+        <button role="tab" data-tab="help" >Ajuda</button>
+        <button role="tab" data-tab="admin" id="meuBotao">Admin</button>
       </nav>
     </header>
     <main id="app" aria-live="polite"></main>
@@ -740,6 +741,10 @@
       sv(); render();
     });
     render();
+
+    document.getElementById("meuBotao").addEventListener("click", function() {
+    window.location.href = "admin.html";
+     });
   </script>
 </body>
 
