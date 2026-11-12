@@ -3,8 +3,8 @@
 session_start();
 
 // Usuário e senha definidos no código
-$usuario_correto = "admin";
-$senha_correta = "123456";
+$usuario_correto = "*****";
+$senha_correta = "*****";
 
 $erro = "";
 
